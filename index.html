@@ -5,16 +5,18 @@
     <title></title>
   </head>
   <body>
+    <div ng-app="myModule" ng-controller="SimpleController">
     <nav>
       <a href="lab11.html">lab11</a>
       <a href="item1.html">item1</a>
       <a href="item2.html">item2</a>
     </nav>
+    {{2+2}}
     <div >
       <p>This is the main page for this project.</p>
     </div>
      <ng-view></ng-view>
-   <div ng-app="myModule" ng-controller="SimpleController"></div>
+   </div>
  
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
