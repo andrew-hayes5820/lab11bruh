@@ -3,16 +3,23 @@ app.config(function($routeProvider, $locationProvider) {
         $routeProvider
         .when('/',
         {controller: 'SimpleController',
-        templateUrl: '#/view1.html'
+        templateUrl: 'index.html'
         })
         .when('/cat',
         {controller: 'SimpleController',
-        templateUrl: '#/view2.html'
+        templateUrl: 'item1.html'
         })
         .when('/dog',
         {controller: 'SimpleController',
-        templateUrl: '#/view2.html'
+        templateUrl: 'item2.html'
         })
-        .otherwise({ redirectTo: '/' });
+        .otherwise({ 
+            redirectTo: '/' 
+        });
+
         $locationProvider.hashPrefix('');
+
+        app.controller('AppController', function(){
+
+        }
 });
